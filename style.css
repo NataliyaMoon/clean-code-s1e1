@@ -27,7 +27,7 @@
   width: 500px;
   margin: 0 auto 0;
 }
-.label-task {
+.task {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
@@ -138,15 +138,13 @@
 }
 
 /* Edit Task */
-.tasks .task-item .input[type="text"] {
+.tasks .li .input[type="text"] {
   display: none;
 }
-
 .tasks .edit-mode .input[type=text] {
   display: inline-block;
   width: 224px;
 }
-
 .tasks .edit-mode .label {
   display: none;
 }
