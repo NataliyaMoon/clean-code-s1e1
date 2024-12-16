@@ -61,9 +61,9 @@
   color: #3a3a3a;
 }
 /* Heading */
+.adding-elem_title,
 .todo-list_title,
-.completed-list_title,
-.adding-elem_label {
+.completed-list_title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -89,7 +89,7 @@
 }
 
 /* New Task */
-.adding-elem_label {
+.adding-elem_title {
   display: block;
   margin: 0 0 20px;
 }
