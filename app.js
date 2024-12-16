@@ -10,7 +10,7 @@
 
 var taskInput=document.getElementById("new-task");//Add a new task.
 var addButton=document.getElementsByTagName("button")[0];//first button
-var incompletedTaskHolder=document.getElementById("incompleted-tasks");//ul of #incompletedTasks
+var incompletedTaskHolder=document.getElementById("todo__tasks");//ul of #incompletedTasks
 var completedTasksHolder=document.getElementById("completed-tasks");//completed-tasks
 
 
@@ -41,7 +41,7 @@ var createNewTaskElement=function(taskString){
     checkBox.type="checkbox";
     checkBox.className="input";
     editInput.type="text";
-    editInput.className="input input-task";
+    editInput.className="input task";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
     editButton.className="button edit";
@@ -97,10 +97,12 @@ var editTask=function(){
         label.innerText=editInput.value;
         editBtn.innerText="Edit";
         listItem.classList.remove("edit-mode");
+        listItem.classList.add("task-item");
     }else{
         editInput.value=label.innerText;
         editBtn.innerText="Save";
         listItem.classList.add("edit-mode");
+        listItem.classList.remove("task-item");
     }
 
 };
