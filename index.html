@@ -8,22 +8,22 @@
   </head>
   <body class="page">
     <div class="decoration">
-      <img class="img" src="./eisenhower-matrix.jpg" alt="Eisenhower matrix">
-      <a class="details"
+      <img class="decoration_img" src="./eisenhower-matrix.jpg" alt="Eisenhower matrix">
+      <a class="decoration_details"
         href="https://goal-life.com/page/method/matrix-eisenhower">
         Want more details?
       </a>
     </div>
     <main class="main">
       <section id="adding-elem">
-        <label for="new-task" class="label">Add Item</label>
-        <div class="task-row">
+        <label for="new-task" class="adding-elem_label">Add Item</label>
+        <div class="adding-elem_task">
           <input id="new-task"class="input task" type="text">
           <button class="button">Add</button>
         </div>
       </section>
-      <section>
-        <h3 class="todo-list">Todo</h3>
+      <section class="todo-list">
+        <h3 class="todo-list_title">Todo</h3>
         <ul id="incompleted-tasks" class="tasks">
           <li class="li task-item">
             <input type="checkbox" class="input">
@@ -45,11 +45,11 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h3 class="completed-list">Completed</h3>
+      <section class="completed-list">
+        <h3 class="completed-list_title">Completed</h3>
         <ul id="completed-tasks" class="tasks">
           <li class="li completed-task">
-            <input type="checkbox" checked class="tasks">
+            <input type="checkbox" class="input" checked>
             <label class="label task">See the Doctor</label>
             <input type="text" class="input task">
             <button class="button edit">Edit</button>
@@ -59,7 +59,7 @@
           </li>
         </ul>
       </section>
-    </div>
+    </main>
     <script src="app.js"></script>
   </body>
 </html>

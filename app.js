@@ -41,7 +41,7 @@ var createNewTaskElement=function(taskString){
     checkBox.type="checkbox";
     checkBox.className="input";
     editInput.type="text";
-    editInput.className="input task";
+    editInput.className="input input-task";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
     editButton.className="button edit";
@@ -96,11 +96,11 @@ var editTask=function(){
         //label becomes the inputs value.
         label.innerText=editInput.value;
         editBtn.innerText="Edit";
-        listItem.classList.replace("edit-mode", "task-item");
+        listItem.classList.remove("edit-mode");
     }else{
         editInput.value=label.innerText;
         editBtn.innerText="Save";
-        listItem.classList.replace("task-item", "edit-mode");
+        listItem.classList.add("edit-mode");
     }
 
 };
